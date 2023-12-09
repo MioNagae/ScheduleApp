@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  get 'schedules/index'
-  get 'schedules/show'
-  get 'schedules/new'
-  get 'schedules/edit'
+  root :to => 'schedules#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   resources :schedules
