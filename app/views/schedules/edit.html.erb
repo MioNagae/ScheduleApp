@@ -18,8 +18,7 @@
                     <div class = "FormDataA">
                         <div><%= f.label :finishday ,"終了日" %></div>
                         <div><%= f.date_field :finishday ,class:"dayform"%></div>
-                    </div>
-                    
+                    </div>              
                 </div>
                 <div class = "FormCheckbox">
                     <%= f.check_box :allday %>
@@ -31,7 +30,7 @@
                 </div>
                 <div>
                     <div class = "addfooter">
-                        <button class = "btncancel"><%= link_to "キャンセル", :schedules ,class:"cancel" %></button>
+                        <button class = "btncancel"><%= link_to "キャンセル", :back ,class:"cancel" %></button>
                         <div class = "btnsave"><%= f.submit "登録" ,class:"saveschedule" %></div>
                     </div>
                 </div>

@@ -1,9 +1,9 @@
 <html lang="ja">
 <div class = "Container">
     <p><%= @new %></p>
-   
     <section class = "FormWrapper">
         <h2 class = "PageTitle_text">予定の新規追加</h2>
+        
         <div class ="FormContainer">
             <%= form_with model: @schedule do |f| %>
                 <%= render "shared/error", obj: @schedule %> 
