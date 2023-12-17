@@ -2,7 +2,7 @@ class SchedulesController < ApplicationController
     def index
       @schedules = Schedule.all
     end
-  
+   
     def create
       @schedule = Schedule.new(params.require(:schedule).permit(:title, :startday, :finishday, :allday, :updateday, :schedule_memo))
       if @schedule.save
